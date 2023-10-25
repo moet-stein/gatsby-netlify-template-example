@@ -37,6 +37,7 @@ export default function Works({ posts }) {
                   imageInfo={item.frontmatter.featuredimage}
                   title={item.frontmatter.title}
                   slug={item.fields.slug}
+                  quality="70" width="600"
                 />
                 {/* </div> */}
               </Box>

@@ -14,7 +14,7 @@ const FeatureGrid = ({ gridItems }) => (
                 display: 'inline-block',
               }}
             >
-              <WorksImage imageInfo={item} />
+              <WorksImage imageInfo={item} quality="100" width="600" />
             </div>
           </div>
           <p>{item.text}</p>

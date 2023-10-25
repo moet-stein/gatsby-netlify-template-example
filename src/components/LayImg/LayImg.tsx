@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import ImgCloudinary from '../ImgCloudinary';
 
 const useStyles = makeStyles((theme) => ({
   imgWidth: {
@@ -69,11 +70,15 @@ export default function LayImg({ img }) {
         m={1}
         onClick={handleOpen}
       >
-        {img && (
-          <img
-            style={{ borderRadius: 5, width: 300 }}
+        {img?.image && (
+          <ImgCloudinary style={{ borderRadius: 5, width: 300 }}
             className={classes.imgWidth}
             src={img.image}
+            quality={100}
+            width={1024}
+            title="img"
+
+
           />
         )}
       </Box>

@@ -106,6 +106,7 @@ export function RelatedImgs({ data, location }) {
                       imageInfo={w.frontmatter.featuredimage}
                       title={w.frontmatter.title}
                       slug={w.fields.slug}
+                      quality="70" width="600"
                     />
                   </Box>
                 ) : (
@@ -114,6 +115,7 @@ export function RelatedImgs({ data, location }) {
                       imageInfo={w.frontmatter.featuredimage}
                       title={w.frontmatter.title}
                       slug={w.fields.slug}
+                      quality="70" width="600"
                     />
                   </Box>
                 )}
